@@ -1,38 +1,209 @@
-.App {
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+.nav
+{
+  margin: 0px 20px;
+}
+.Cards
+{
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+.CardContent
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+}
+.CardImage
+{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+
+}
+.time
+{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: grey;
+}
+.ExPrix
+{
+  text-decoration: line-through;
+  color: grey;
+  font-size: 12px;
+  margin: 0px 0px 10px 0px;
+}
+.CardPrix
+{
+  color: #9c27b0;
+}
+.css-ryrseu-MuiRating-root
+{
+  color: #9c27b0 !important;
+  font-size: 15px !important;
+}
+.TitleHome
+{
   text-align: center;
+  font-size: x-large;
+  margin: 20px 0px 15px 0px;
+}
+.UnderTitleHome
+{
+ text-align: center;
+ font-size: medium;
+ color: #9c27b0;
+ margin: 0px 0px 20px 0px;
+}
+a:link {color:hsl(291, 64%, 42%);text-decoration:none;}
+.NavHome a:visited {color:#ffffff;text-decoration:none;}
+.NavDest a:visited {color:#ffffff;text-decoration:none;}
+.UnderTitleHome a:visited {color:#9c27b0;text-decoration:none;}
+
+.UnderTitleHome.visited
+{
+  color: #9c27b0 !important;
+}
+.nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	/* visibility: hidden; */
+	/* opacity: 0; */
+	font-size: 1.8rem;
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+
+  .nav-btn {
+		display: block;
+	}
+  nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column !important;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color:#9c27b0;
+		transition: 1s;
+		transform: translateY(-100vh);
+    z-index: 1;
+	}
+  .responsive_nav {
+		transform: none;
+	}
+  .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+.nav
+{
+  display: flex;
+		flex-direction: column !important;
+    align-items: center !important;
+		justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+}
+img
+{
+  width: 100%;
+height: 300px;
+}
+.box
+{
+ padding: 20px;
+ margin: auto;
+}
+.css-1x1xx5k
+{
+  margin: auto;
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper
+{
+  margin: 0px 0px 0px 10px;
+}
+.a
+{
+  font-size: 13px;
+  color: #9b27b098;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.topcard
+{
+  display: flex;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Price
+{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.contentCard
+{
+  display: flex;
+
+}
+.CardImage
+{
+  margin: 20px;
+  width: 300px;
+  margin: 20px;
+}
+.act
+{
+  margin-top: 40px;
+}
+.css-1k3rt34-MuiPaper-root-MuiCard-root
+{
+  margin: auto;
+  background-color: red;
+}
+.descriptionCard
+{
+  margin-top: 20px;
+}
+.contentsCard
+{
+  display: flex;
+  justify-content: space-between;
+
+}
+.Flex-top
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  margin-top: 20px;
+}
+.TitleCardRegion
+{
+  font-size: 20px;
+  color: #9c27b0;
+  
+}
+.DescriptionCardRegion
+{
+  font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

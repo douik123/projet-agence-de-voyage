@@ -164,11 +164,11 @@ height: 300px;
   display: flex;
 
 }
-.CardImage
+.CardsImage
 {
   margin: 20px;
-  width: 300px;
-  margin: 20px;
+width: 130%;
+height: 80%;
 }
 .act
 {
@@ -204,6 +204,11 @@ height: 300px;
 }
 .DescriptionCardRegion
 {
-  font-size: 12px;
+  font-size: 16px;
+  margin: 15px 0px;
+}
+.rating
+{
+  margin: 15px 0px;
 }
 

@@ -1,11 +1,10 @@
 import turquie from '../assets/turquie.png'
 import egypte from '../assets/egyptee.png'
 import italie from '../assets/italiee.png'
-import { useState } from 'react';
 import Card from './CardTour.js'
 import {Link} from 'react-router-dom'
 function App() {
-    const[tours,setTours]= useState([
+    const tours= [
         {
         name: "Turquie",
         prix: 500,
@@ -33,7 +32,7 @@ function App() {
             duree: 9,
             id:3,
         },
-      ]);
+      ];
   return (
    <div>
     <div className="TitleHome">Popular Tours</div>

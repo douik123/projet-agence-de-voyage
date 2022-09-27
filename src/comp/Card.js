@@ -12,7 +12,7 @@ function App({tour}) {
     <Card sx={{ maxWidth: 345 }}>
     <CardMedia height="120"><div className='CardImage'>{tour.image}</div></CardMedia>
     <CardContent>
-    <Link to={`/${tour.region}/${tour.link}`}><Typography gutterBottom variant="h5" component="div">
+    <Link to={`${tour.link}`}><Typography gutterBottom variant="h5" component="div">
       {tour.name}
       </Typography></Link>
       <Typography gutterBottom variant="h9" component="div">

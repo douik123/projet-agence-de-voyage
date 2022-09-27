@@ -15,7 +15,28 @@ export default function FadeMenu({showNavbar}) {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
+  const regions=[
+    {
+    name:"Africa",
+    link:"Africa"
+    },
+    {
+        name:"America",
+        link:"America"
+    },
+    {
+        name: "Asie",
+        link:"Asie"
+    },
+    {
+      name:"Europe",
+      link:"Europe" 
+  },
+  {
+    name:"Océanie",
+    link:"Océanie"
+},
+  ];
   return (
     <div className='imaages'>
       <Button
@@ -38,11 +59,13 @@ export default function FadeMenu({showNavbar}) {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={()=>{handleClose();showNavbar()}}><Link  to='/Africa'>Afrique</Link></MenuItem>
-        <MenuItem onClick={()=>{handleClose();showNavbar()}}><Link to='/America'>Amérique</Link></MenuItem>
-        <MenuItem onClick={()=>{handleClose();showNavbar()}}><Link to='/Asia'>Asie</Link></MenuItem>
-        <MenuItem onClick={()=>{handleClose();showNavbar()}}><Link to='/dest/Europe'>Europe</Link></MenuItem>
-        <MenuItem onClick={()=>{handleClose();showNavbar()}}><Link to='/dest/Océanie'>Océanie</Link></MenuItem>
+        {
+          regions.map(region=>(
+              <div>
+           <MenuItem onClick={()=>{handleClose();showNavbar()}}><Link  to={`destination/${region.link}`}>{region.name}</Link></MenuItem>
+              </div>
+            ))
+      }
       </Menu>
     </div>
   );

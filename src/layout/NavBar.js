@@ -14,11 +14,11 @@ function Nav() {
   return (
     <AppBar position='static'  color='secondary'>
       <Toolbar>
-       <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
-        <AirplanemodeActiveIcon/>
+       <IconButton size='large' edge='start' color='inherit' aria-label='logo' className='NavHome'>
+       <Link to='/'><AirplanemodeActiveIcon/></Link>
        </IconButton>
-       <Typography variant='h6' component='div' sx={{flexGrow: 1}}>
-        AirDouik
+       <Typography variant='h6' component='div' sx={{flexGrow: 1}} className='NavHome'>
+       <Link to='/'>AirDouik</Link>
        </Typography>
        <nav ref={navRef}>
        <Stack direction='row' spacing={{ xs: 0, sm: 0, md: 4 }} className="nav">

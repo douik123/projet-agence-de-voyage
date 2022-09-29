@@ -8,7 +8,7 @@ import south from './assets/southafrica.png'
 import costa from './assets/costa.png'
 import rio from './assets/rio.png'
 import Region from './comp/Region.js'
-// import Affichageimage from './comp/AffImage.js'
+import Pays from './comp/Pays'
 
 function App() {
   const paysinfo=[
@@ -22,6 +22,7 @@ function App() {
       duree: 6,
       link :'Rio',
       region:'America',
+      hotel:""
 
     },
     {
@@ -34,6 +35,7 @@ function App() {
       duree: 4,
       link :'Costa',
       region:'America',
+      hotel:""
    
     },
     {
@@ -46,6 +48,7 @@ function App() {
       duree: 9,
       link :'South_Africa',
       region:'Africa',
+      hotel:""
  
     },
     {
@@ -58,6 +61,7 @@ function App() {
       duree: 7,
       link :'Egypte',
       region:'Africa',
+      hotel:""
         
   },
   {
@@ -70,7 +74,7 @@ function App() {
     duree: 6,
     link :'Ethiopia',
     region:'Africa',
-       
+    hotel:""       
 },
 ];
 
@@ -79,8 +83,8 @@ function App() {
    <Navbar/>
    <Routes>
    <Route exact path='/' element={<Home/>}/>
-    <Route  path='destination/:link' element={<Region paysinfo={paysinfo}/>}/>
-   {/* <Route  path='destination/:region/:link' element={<Affichageimage/>}/> */}
+   <Route  path='destination/:link' element={<Region paysinfo={paysinfo}/>}/>
+   <Route  path='destination/:region/:link' element={<Pays/>}/>
    </Routes>
    </div>
   );

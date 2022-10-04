@@ -225,6 +225,10 @@ width: 250%;
   margin-right: auto;
   width: 1180px;
 }
+.infoss
+{
+  width: 1980px;
+}
 .descp
 {
   font-size: 1.125rem;
@@ -233,7 +237,7 @@ h1{
   margin: 15px 0px;
  
 }
-h2
+h3
 {
   margin: 15px 0px;
   
@@ -241,6 +245,7 @@ h2
 .Hotels
 {
   font-size: 1.125rem;
+  width: 550px;
 }
 .ThingsToDo
 {
@@ -277,7 +282,7 @@ align-items: center;
 }
 .TitleCardactivite
 {
-  font-size: 22px;
+  font-size: 18px;
   color: #9c27b0;
 }
 .TitleActivite
@@ -303,6 +308,59 @@ align-items: center;
   display: flex;
   gap: 10px;
   font-size: 14px;
+}
+.descp 
+{
+  display: flex;
+    justify-content: center;
+    gap: 70px;
+
+}
+.css-zjf1nq-MuiPaper-root
+{
+  visibility: hidden;
+}
+.css-rh92k-MuiPaper-root-MuiMobileStepper-root
+{
+  visibility: hidden;
+}
+.css-1x1xx5k
+{
+  width: 100%;
+    height: 150%;
+}
+.carousel .thumbs {
+  display: none;
+}
+.carousel .carousel-status {
+display: none;
+}
+.carousel .slider-wrapper {
+  overflow: hidden;
+  margin: auto;
+  width: 470px !important;
+  transition: height .15s ease-in;
+  /* height: 500px !important; */
+  margin-top: 20px !important;
+  margin-left: 4px !important;
+}
+.carousel.carousel-slider .control-arrow {
+  top: 20px !important;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+  color: red;
+  margin: 0px 40px 0px 40px;
+  margin-left: 4px !important;
+}
+.carousel.carousel-slider .control-arrow {
+  margin: 0px 75px 0px 0px !important;
+}
+.carousel .control-dots
+{
+  margin: 0px 95px 0px 0px !important; 
 }
 @media only screen and (max-width: 1190px) {
   .descriptionC
@@ -345,4 +403,71 @@ img {
   height: 100%;
 }
 
+}
+.form
+{
+  margin: 0px 0px 50px 0px;
+}
+.form
+{
+  width:340px;
+  height:670px;
+  background:#e6e6e6;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  margin:calc(50vh - 220px) auto;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative}
+.TitleContact{
+  margin:10px 0;
+  padding-bottom:10px;
+  width:180px;
+  color: #9c27b0;
+  border-bottom:3px solid #9c27b0
+}
+.InputContact{
+  width:100%;
+  padding:5px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #9c27b0;
+  color: #000;
+  margin-top:20px ;
+}
+.InputContact:focus{
+  border-bottom:2px solid #78788c
+}
+p:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a
+}
+.SubmitContact{
+  float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #9c27b0;
+  background:0;
+  color:#9c27b0;
+  cursor:pointer;
+  transition:all .3s
+}
+.SubmitContact:hover{
+  background:#9c27b0;
+  color:#fff
+}
+.NavContact
+{
+  color: white;
 }

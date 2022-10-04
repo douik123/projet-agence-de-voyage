@@ -3,6 +3,7 @@ import egypte from '../assets/egyptee.png'
 import italie from '../assets/italiee.png'
 import Card from './CardTour.js'
 import {Link} from 'react-router-dom'
+import AffichageImage from './AffImage.js'
 function App() {
     const tours= [
         {

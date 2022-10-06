@@ -17,6 +17,7 @@ function Dest({paystours,activities,images,infopays,hotels,thingstodo}) {
     return (
      <div>
         <div className="descriptionC">
+          <div className="descpt">
         { 
         infopays.filter((pays)=>
           pays.link===link
@@ -31,7 +32,7 @@ function Dest({paystours,activities,images,infopays,hotels,thingstodo}) {
           </div>
         ))
       } 
-       <div className="descp">
+       
        
        <div className="infoss">
      <div><h3>Best Hotels in {name}</h3></div>
@@ -42,7 +43,7 @@ function Dest({paystours,activities,images,infopays,hotels,thingstodo}) {
         )
         .map(infohotel=>(
 
-         <div>{infohotel.description}</div>
+         <div>- {infohotel.description}</div>
        
         ))
       }
@@ -55,15 +56,16 @@ function Dest({paystours,activities,images,infopays,hotels,thingstodo}) {
         )
         .map(infothingtodo=>(
           
-          <div>{infothingtodo.description}</div>
+          <div>- {infothingtodo.description}</div>
        
         ))
       }
       </div>
-      <div><AffichageImage/></div>
+      <div><AffichageImage className="affichage"/></div>
       </div>  
       </div>
-      <div><h2>Cheap flight deals to {name}</h2></div>
+      <div>
+        <h2>Cheap flight deals to {name}</h2></div>
       </div>
       <div className="Cards">
       {

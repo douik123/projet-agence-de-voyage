@@ -25,7 +25,7 @@ function Nav() {
        <div className='NavHome'><Button color='inherit' 	onClick={showNavbar}><Link  to='/'>Home</Link></Button></div>
        <DestButt showNavbar={showNavbar}/>
        <div className='NavHome'><Button color='inherit' onClick={showNavbar}><Link to='/contact'>Contacts</Link></Button></div>
-       <div className='NavHome'><Button color='inherit'onClick={showNavbar} >About Us</Button></div>
+       <div className='NavHome'><Button color='inherit'onClick={showNavbar} ><Link to='/AboutUs'>About Us</Link></Button></div>
        <button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

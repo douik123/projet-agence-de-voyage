@@ -10,6 +10,7 @@ import rio from './assets/rio.png'
 import Region from './comp/Region.js'
 import Pays from './comp/Pays'
 import Contact from './comp/contact.js'
+import AboutUs from './comp/AboutUs.js'
 import privateguided from "./assets/privateguided.png"
 import discoverpetropolis from "./assets/discoverpetropolis.png"
 import privatecustom from "./assets/privatecustom.png"
@@ -262,6 +263,7 @@ const thingstodo=[
    <Route exact path='/' element={<Home/>}/>
    <Route  path='destination/:link' element={<Region paysinfo={paysinfo}/>}/>
    <Route path='/contact' element={<Contact/>}/>
+   <Route path='/AboutUs' element={<AboutUs/>}/>
    <Route  path='destination/:region/:link' element={<Pays paystours={paystours} activities={activities} images={image} infopays={infopays} hotels={hotels} thingstodo={thingstodo} />}/>
    </Routes>
    </div>
